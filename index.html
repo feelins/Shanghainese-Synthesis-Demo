@@ -33,7 +33,24 @@
 
 
   <div><p>
-    We compare our method with Tacotron 2 (<a href="https://arxiv.org/abs/1712.05884">https://arxiv.org/abs/1712.05884</a>), FastSpeech (<a href="https://arxiv.org/abs/1905.09263">https://arxiv.org/abs/1905.09263</a>).
+    We define three systems to compare.\begin{itemize}
+    \item {\bf Baseline system}: None tone sandhi was used. We give each syllable their citation tone for training. So there are only 5 citation tone categories, 53, 34, 23, 55, 12. 
+    \item {\bf Tra-SH system}: Traditional tone sandhi rules shown in Table \ref{tab:TraToneSandhi} are used. There are 10 tone categories, 53, 34, 23, 55, 12, 21, 33, 44, 11, 22.
+    \item {\bf Pro-SH system}: Tone sandhi rules shown in Table \ref{tab:proposed_sandhi_rules} are used in our proposed system. There are 13 tone categories, 53, 34, 23, 50, 12, 55, 42, 21, 33, 44, 21, 11, 22.
+    
+    where SH stands for Shanghai. Examples can be found on Fig. \ref{fig:section_arctiture}.
+    
+    <ol>
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ol>
+
+<ul>
+   <li>Coffee</li>
+   <li>Tea</li>
+   <li>Milk</li>
+</ul>
   </p></div>
 
   <div>
