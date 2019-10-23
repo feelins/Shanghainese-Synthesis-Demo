@@ -1,0 +1,136 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Audio samples of "FLOW-TTS: A NON-AUTOREGRESSIVE NETWORK FOR TEXT TO SPEECH BASED ON FLOW"</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <!-- <link rel="shortcut icon" href="../../images/taco.png"> -->
+</head>
+
+<body>
+  <article>
+    <header>
+      <h1>Audio samples of "FLOW-TTS: A NON-AUTOREGRESSIVE NETWORK FOR TEXT TO SPEECH BASED ON FLOW"</h1>
+    </header>
+  </article>
+
+  <!-- <div><b>Paper:</b> <a href="https://arxiv.org/abs/1703.10135">arXiv</a> <a href="http://www.interspeech2017.org/program/technical-program/">Interspeech 2017</a></div> -->
+  <!-- <div><b>Authors:</b> Yuxuan Wang, RJ Skerry-Ryan, Daisy Stanton, Yonghui Wu, Ron J. Weiss, Navdeep Jaitly, Zongheng Yang, Ying Xiao, Zhifeng Chen, Samy Bengio, Quoc Le, Yannis Agiomyrgiannakis, Rob Clark, Rif A. Saurous</div> -->
+
+  <h2 id="abstract">Abstract</h2>
+
+<p>Most of the existing end-to-end text to speech (TTS) models are autoregressive. 
+  Recently some non-autoregressive models have been proposed, which greatly speed up the inference process. 
+  However, these non-autoregressive models use a well-trained autoregressive teacher model to guide their training process, making the training process complex and unstable. 
+  In this work, we propose Flow-TTS, a non-autoregressive end-to-end neural TTS model based on generative flow. 
+  Unlike other non-autoregressive models, Flow-TTS can achieve high-quality speech generation by using a single feed-forward network. 
+  Flow-TTS is the first model (to our knowledge) utilizing flow in spectrogram generation network and the first non-autoregssive model (to our knowledge) which jointly learns the alignment and spectrogram generation through a single network. 
+  Experiments on LJSpeech show that the speech quality of Flow-TTS heavily approaches that of human and is even better than that of autoregressive models. 
+  Meanwhile, the inference speed of Flow-TTS is about 23 times speed-up over Tacotron 2, which is comparable to FastSpeech. </p>
+
+
+  <div><p>
+    We compare our method with Tacotron 2 (<a href="https://arxiv.org/abs/1712.05884">https://arxiv.org/abs/1712.05884</a>), FastSpeech (<a href="https://arxiv.org/abs/1905.09263">https://arxiv.org/abs/1905.09263</a>).
+  </p></div>
+
+  <div>
+    <p><em>I will quote an extract from the reverend gentleman&rsquo;s own journal.</em></p>
+      <table>
+        <tbody>
+          <tr>
+            <td><span><b>GT</b></td></span>
+            <td><span><b>GT(WaveGlow)</b></td></span>
+            <td><span><b>Flow-TTS</b></td></span>
+            <td><span><b>Tacotron 2</b></td></span>
+            <td><span><b>FastSpeech</b></td></span>
+          </tr>
+          <!-- <tr>
+            <td><audio controls=""><source src="demos/proposed/F2M/p293_053.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/F2M/p360_005.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/F2M/293-360-053.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/F2M/293_360_053.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls=""><source src="demos/proposed/F2M/p293_117.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/F2M/p360_005.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/F2M/293-360-117.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/F2M/293_360_117.wav" type="audio/wav"></audio></td>
+          </tr> -->
+        </tbody>
+      </table>
+<!-- 
+      <h3>P272(Male) -> P232(Male)</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td><span><b>Source speech example</b></td></span>
+            <td><span><b>Target speech example</b></td></span>
+            <td><span><b>Adaptive-VC</b></td></span>
+            <td><span><b>Proposed</b></td></span>
+          </tr>
+          <tr>
+            <td><audio controls=""><source src="demos/proposed/M2M/p272_025.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/M2M/p232_007.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/M2M/272-232-025.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/M2M/272_232_025.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls=""><source src="demos/proposed/M2M/p272_046.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/M2M/p232_007.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/M2M/272-232-046.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/M2M/272_232_046.wav" type="audio/wav"></audio></td>
+          </tr>
+        </tbody>
+      </table>
+
+    <h3>P361(Female) -> P229(Female)</h3>
+      <table>
+        <tbody>
+          <tr>
+            <td><span><b>Source speech example</b></td></span>
+            <td><span><b>Target speech example</b></td></span>
+            <td><span><b>Adaptive-VC</b></td></span>
+            <td><span><b>Proposed</b></td></span>
+          </tr>
+          <tr>
+            <td><audio controls=""><source src="demos/proposed/F2F/p361_075.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/F2F/p229_005.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/F2F/361-229-075.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/F2F/361_229_075.wav" type="audio/wav"></audio></td>
+          </tr>
+          <tr>
+            <td><audio controls=""><source src="demos/proposed/F2F/p361_065.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/F2F/p229_005.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/F2F/361-229-065.wav" type="audio/wav"></audio></td>
+            <td><audio controls=""><source src="demos/proposed/F2F/361_229_065.wav" type="audio/wav"></audio></td>
+          </tr>
+        </tbody>
+      </table>
+    
+    <h3>P232(Male) -> P229(Female)</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td><span><b>Source speech example</b></td></span>
+          <td><span><b>Target speech example</b></td></span>
+          <td><span><b>Adaptive-VC</b></td></span>
+          <td><span><b>Proposed</b></td></span>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="demos/proposed/M2F/p232_033.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="demos/proposed/M2F/p229_005.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/M2F/232-229-033.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="demos/proposed/M2F/232_229_033.wav" type="audio/wav"></audio></td>
+        </tr>
+        <tr>
+          <td><audio controls=""><source src="demos/proposed/M2F/p232_080.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="demos/proposed/M2F/p229_005.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/M2F/232-229-080.wav" type="audio/wav"></audio></td>
+          <td><audio controls=""><source src="demos/proposed/M2F/232_229_080.wav" type="audio/wav"></audio></td>
+        </tr>
+      </tbody>
+    </table> -->
+
+</body>
+
+</html>
