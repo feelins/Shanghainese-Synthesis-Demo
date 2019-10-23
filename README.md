@@ -1,4 +1,4 @@
-# A Semi-supervised method to Imjplement End-to-end Speech Synthesis for Tone Sandhi Language  
+# A Semi-supervised method to Implement End-to-end Speech Synthesis for Tone Sandhi Language  
 
 Demos of Shanghainese speech synthesis results  
 
