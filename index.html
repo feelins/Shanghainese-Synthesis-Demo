@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Audio samples of "A Semi-supervised method to Implement End-to-end Speech Synthesis for Tone Sandhi Language"</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css" />
-  <!-- <link rel="shortcut icon" href="../../images/taco.png"> -->
 </head>
 
 <body>
@@ -14,8 +13,7 @@
     </header>
   </article>
 
-  <!-- <div><b>Paper:</b> <a href="https://arxiv.org/abs/1703.10135">arXiv</a> <a href="http://www.interspeech2017.org/program/technical-program/">Interspeech 2017</a></div> -->
-  <div><b>Authors:</b> Pengfei Shao, Minchuan Chen, Jun Ma, Shaojun Wang, Jing Xiao</div>
+   <div><b>Authors:</b> Pengfei Shao, Minchuan Chen, Jun Ma, Shaojun Wang, Jing Xiao</div>
 
   
 
@@ -31,15 +29,15 @@
   compared to the system using traditional tone sandhi rules or using citation tone only. 
   These generalized rules can also be used for the front-end stage of speech synthesis as well. </p>
 
-<h2 id="abstract">Subjective evaluations</h2>
+<h2>Subjective evaluations</h2>
   <h4>The following three speech synthesis systems were established for subjective preference tests in this paper.</h4>
   <div><p>
     <ul>
       <li><b>Baseline system</b>: None tone sandhi was used. We give each syllable their citation tone for training. 
         So there are only 5 citation tone categories, 53, 34, 23, 55, 12. </li>
-      <li><b>Tra-SH system</b>: Traditional tone sandhi rules shown in Table 1 are used. 
+      <li><b>Tra-SH system</b>: Traditional tone sandhi rules shown in Table 1 of this paper are used. 
         There are 10 tone categories, 53, 34, 23, 55, 12, 21, 33, 44, 11, 22.</li>
-      <li><b>Pro-SH system</b>: Tone sandhi rules shown in Table 2 are used in our proposed system. 
+      <li><b>Pro-SH system</b>: Tone sandhi rules shown in Table 2 of this paper are used in our proposed system. 
         There are 13 tone categories, 53, 34, 23, 50, 12, 55, 42, 21, 33, 44, 21, 11, 22.</li>
     </ul>
     where SH stands for Shanghainese.
@@ -164,78 +162,6 @@
         </tbody>
       </table>
       <p>&nbsp;</p>
-<!-- 
-      <h3>P272(Male) -> P232(Male)</h3>
-      <table>
-        <tbody>
-          <tr>
-            <td><span><b>Source speech example</b></td></span>
-            <td><span><b>Target speech example</b></td></span>
-            <td><span><b>Adaptive-VC</b></td></span>
-            <td><span><b>Proposed</b></td></span>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed/M2M/p272_025.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/M2M/p232_007.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/M2M/272-232-025.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/M2M/272_232_025.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed/M2M/p272_046.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/M2M/p232_007.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/M2M/272-232-046.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/M2M/272_232_046.wav" type="audio/wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-
-    <h3>P361(Female) -> P229(Female)</h3>
-      <table>
-        <tbody>
-          <tr>
-            <td><span><b>Source speech example</b></td></span>
-            <td><span><b>Target speech example</b></td></span>
-            <td><span><b>Adaptive-VC</b></td></span>
-            <td><span><b>Proposed</b></td></span>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed/F2F/p361_075.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/F2F/p229_005.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/F2F/361-229-075.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/F2F/361_229_075.wav" type="audio/wav"></audio></td>
-          </tr>
-          <tr>
-            <td><audio controls=""><source src="demos/proposed/F2F/p361_065.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/F2F/p229_005.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/F2F/361-229-065.wav" type="audio/wav"></audio></td>
-            <td><audio controls=""><source src="demos/proposed/F2F/361_229_065.wav" type="audio/wav"></audio></td>
-          </tr>
-        </tbody>
-      </table>
-    
-    <h3>P232(Male) -> P229(Female)</h3>
-    <table>
-      <tbody>
-        <tr>
-          <td><span><b>Source speech example</b></td></span>
-          <td><span><b>Target speech example</b></td></span>
-          <td><span><b>Adaptive-VC</b></td></span>
-          <td><span><b>Proposed</b></td></span>
-        </tr>
-        <tr>
-          <td><audio controls=""><source src="demos/proposed/M2F/p232_033.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="demos/proposed/M2F/p229_005.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/M2F/232-229-033.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="demos/proposed/M2F/232_229_033.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td><audio controls=""><source src="demos/proposed/M2F/p232_080.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="demos/proposed/M2F/p229_005.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="demos/baseline/baseline-adaptive-vc/M2F/232-229-080.wav" type="audio/wav"></audio></td>
-          <td><audio controls=""><source src="demos/proposed/M2F/232_229_080.wav" type="audio/wav"></audio></td>
-        </tr>
-      </tbody>
-    </table> -->
 
 </body>
 
