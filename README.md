@@ -2,7 +2,7 @@
 
 https://feelins.github.io/Shanghainese-Synthesis-Demo/index.html  
 
-Demos of Shanghainese speech synthesis results  
+Audio samples of "A Semi-supervised Method to Implement End-to-end Speech Synthesis for Tone Sandhi Language"  
 
 Baseline  
 Tra-SH  
